@@ -1,0 +1,20 @@
+/* CSS */
+
+.rules-li{
+	font-size: .80em;
+	list-style: none;
+}
+
+.rules-text-div{
+	margin-left: 15%;
+}
+
+#scorebox-left{
+	min-height: 80px;
+	padding-top: 30px;
+
+}
+#scorebox-right{
+	 min-height: 80px;
+	 padding-top: 30px;
+}

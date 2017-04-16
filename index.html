@@ -8,52 +8,92 @@
 
 <!-- Boostrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
 
-<div class="container">
-	<div class = "row text-center">
-		<div class = "col">
-			<h1>Crystal Game</h1>
+<div class="container-fluid mt-4">
+	<div class="row justify-content-md-center mt-4">
+
+		<div class="col-lg-4 mt-4">
+		<h1 id="game-title" class="text-center">Crystal Game</h1>
 		</div>
+
+</div>
+
+<div class="row justify-content-md-center mt-4">
+	<div class="col-lg-4">
+
+		<h6 class="text-center">Rules</h6>
+		<ul id="ul-rules-list">
+		<li class="rules-li text-center">You wil be given a random number at the start of the game.</li>
+		<li class="rules-li text-center">By clicking on a crystal you will add a specific amount of points to your total score.</li>
+		<li class="rules-li text-center">You will win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</li>
+		<li class="rules-li text-center">The value of each crystal is hidden from you until you click on it.</li>
+		<li class="rules-li text-center">Each time when the game starts the game will change value of each crystal.</li>
+		</ul>
+
 	</div>
 </div>
 
-<div class="container mt-4">
-	<div class = "row text-center">
-		<div class = "col">
-			<h3>Rules</h3>
-			<h6>You wil be given a random number at the start of the game.</h6>
-			<h6>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</h6>
-			<h6>You will win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</h6>
-			<h6>The value of each crystal is hidden from you until you click on it.</h6>
-			<h6>Each time when the game starts the game will change value of each crystal.</h6>
+
+<div class="container-fluid mt-4">
+	<div class="row justify-content-md-center align-items-center mt-4">
+		<!--Float this box left -->
+		<div class="col-lg-3 mt-4">
+
+			<p id="current-score-title" class="text-center">Your current score</p>
+
+			<div id="scorebox-left">
+			<p id="actual-current-score" class="text-center">0</p>
+			</div>
+
 		</div>
+
+		<div class="col-lg-2 mt-4">
+
+			<p id="win-line" class="text-center">Wins: 0</p>
+			<p id="lose-line" class="text-center">Losses: 0</p>
+
+		</div>
+
+		<!--Float this box right -->
+		<div class="col-lg-3 mt-4">
+
+			<p id="win-score-title" class="text-center">Score you need</p>
+
+			<div id="scorebox-right">
+			<p id="actual-win-score" class="text-center"></p>
+			</div>
+
+		</div>
+	</div>
+</div>	
+
+<div class="container-fluid mt-4">
+	<div class="row">
+
+		<div class="col-lg-2 offset-lg-2">
+		<img id="crystal-orange" class="crystal-image" value="orange" src="assets/images/crystal_orange.png" alt="Glowing Orange Crystal">
+		</div>
+
+		<div class="col-lg-2">
+		<img id="crystal-green" class="crystal-image" value="green" src="assets/images/crystal_green.png" alt="Glowing Green Crystal">
+		</div>
+
+		<div class="col-lg-2">
+		<img id="crystal-blue" class="crystal-image" value="blue" src="assets/images/crystal_blue.png" alt="Glowing Blue Crystal">
+		</div>
+
+		<div class="col-lg-2">
+		<img id="crystal-red" class="crystal-image" value="red" src="assets/images/crystal_red.png" alt="Glowing Red Crystal">
+		</div>
+
 	</div>
 </div>
 
-<div class="container mt-4">
-	<div class = "row text-center">
-		<div class = "col-lg-2">
-			<h3>Score You need</h3>
-		</div>
-
-		<div class = "col-lg-2">
-			<h3>Current Score (0)</h3>
-		</div>
-
-		<div class = "col-lg-6">
-			<h3>Pics of Crystals</h3>
-		</div>
-
-		<div class = "col-lg-2">
-			<h3>Wins / Losses</h3>
-		</div>
-
-	</div>
-</div>
 
 
 <!-- Bootstrap -->
@@ -66,6 +106,10 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+ <script src="assets/js/game.js"></script>
 
 </body>
 
