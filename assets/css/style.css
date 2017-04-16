@@ -1,5 +1,9 @@
 /* CSS */
 
+*{
+	font-family: 'Coda', cursive;
+}
+
 .rules-li{
 	font-size: .80em;
 	list-style: none;
