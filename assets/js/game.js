@@ -57,11 +57,34 @@ $(document).ready(function() {
  	}
 
  	start();
-	
+
+ 	// JQuery Hover
+
+ 	$("#crystal-orange").hover(function(){
+        $(this).css("opacity", "0.65");
+        }, function(){
+        $(this).css("opacity", "1");
+    });
+	$("#crystal-green").hover(function(){
+        $(this).css("opacity", "0.65");
+        }, function(){
+        $(this).css("opacity", "1");
+    });
+    $("#crystal-blue").hover(function(){
+        $(this).css("opacity", "0.65");
+        }, function(){
+        $(this).css("opacity", "1");
+    });
+    $("#crystal-red").hover(function(){
+        $(this).css("opacity", "0.65");
+        }, function(){
+        $(this).css("opacity", "1");
+    });
 
     $("#crystal-orange").on("click", function() {
 
     	$("#crystal-orange").effect("bounce", {times:2}, "fast" );
+
 
     	cumulativeScore += orangeRandomNumber;
     	$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
