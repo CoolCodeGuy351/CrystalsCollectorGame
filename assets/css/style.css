@@ -18,3 +18,18 @@
 	 min-height: 80px;
 	 padding-top: 30px;
 }
+
+#main-container{
+	
+	background-image: linear-gradient(#a1beed, #a1beed, #3a4f72, #112547);
+	border-radius: 100px;
+	margin: 3%;
+}
+
+body { 
+  background: url(http://i.imgur.com/sxbM6ui.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

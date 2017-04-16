@@ -14,84 +14,95 @@
 
 <body>
 
-<div class="container-fluid mt-4">
-	<div class="row justify-content-md-center mt-4">
-
-		<div class="col-lg-4 mt-4">
-		<h1 id="game-title" class="text-center">Crystal Game</h1>
-		</div>
-
-</div>
-
-<div class="row justify-content-md-center mt-4">
-	<div class="col-lg-4">
-
-		<h6 class="text-center">Rules</h6>
-		<ul id="ul-rules-list">
-		<li class="rules-li text-center">You wil be given a random number at the start of the game.</li>
-		<li class="rules-li text-center">By clicking on a crystal you will add a specific amount of points to your total score.</li>
-		<li class="rules-li text-center">You will win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</li>
-		<li class="rules-li text-center">The value of each crystal is hidden from you until you click on it.</li>
-		<li class="rules-li text-center">Each time when the game starts the game will change value of each crystal.</li>
-		</ul>
-
-	</div>
-</div>
 
 
-<div class="container-fluid mt-4">
-	<div class="row justify-content-md-center align-items-center mt-4">
-		<!--Float this box left -->
-		<div class="col-lg-3 mt-4">
+<div class="container mt-4">
 
-			<p id="current-score-title" class="text-center">Your current score</p>
+		<div id="main-container">
 
-			<div id="scorebox-left">
-			<p id="actual-current-score" class="text-center">0</p>
+			<div class="row justify-content-md-center mt-4">
+
+				<div class="col-lg-4 mt-4">
+				<h1 id="game-title" class="text-center">Crystal Game</h1>
+				</div>
+
 			</div>
 
-		</div>
+		<div class="row justify-content-md-center mt-4">
 
-		<div class="col-lg-2 mt-4">
+			<div class="col-lg-10">
 
-			<p id="win-line" class="text-center">Wins: 0</p>
-			<p id="lose-line" class="text-center">Losses: 0</p>
+				<h6 class="text-center">Rules</h6>
+				<ul id="ul-rules-list">
+				<li class="rules-li text-center">You wil be given a random number at the start of the game.</li>
+				<li class="rules-li text-center">By clicking on a crystal you will add a specific amount of points to your total score.</li>
+				<li class="rules-li text-center">You will win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</li>
+				<li class="rules-li text-center">The value of each crystal is hidden from you until you click on it.</li>
+				<li class="rules-li text-center">Each time when the game starts the game will change value of each crystal.</li>
+				</ul>
 
-		</div>
+			</div>	
 
-		<!--Float this box right -->
-		<div class="col-lg-3 mt-4">
+	</div>
 
-			<p id="win-score-title" class="text-center">Score you need</p>
 
-			<div id="scorebox-right">
-			<p id="actual-win-score" class="text-center"></p>
+		<div class="container mt-4">
+			<div class="row justify-content-md-center align-items-center mt-4">
+				<!--Float this box left -->
+				<div class="col-lg-3 mt-4">
+
+					<h3 id="current-score-title" class="text-center">Your current score</h3>
+
+					<div id="scorebox-left">
+					<h2 id="actual-current-score" class="text-center">0</h2>
+					</div>
+
+				</div>
+
+				<div class="col-lg-3 mt-4">
+
+					<h4 id="win-line" class="text-center">Wins: 0</h4>
+					<h4 id="lose-line" class="text-center">Losses: 0</h4>
+
+				</div>
+
+				<!--Float this box right -->
+				<div class="col-lg-3 mt-4">
+
+					<h3 id="win-score-title" class="text-center">Score you need</h3>
+
+					<div id="scorebox-right">
+					<h2 id="actual-win-score" class="text-center"></h2>
+					</div>
+
+				</div>
 			</div>
+		</div>	
 
+		<div class="container mt-4">
+			<div class="row">
+
+				<div class="col-lg-3">
+				<img id="crystal-orange" class="crystal-image" value="orange" src="assets/images/crystal_orange.png" alt="Glowing Orange Crystal">
+				</div>
+
+				<div class="col-lg-3">
+				<img id="crystal-green" class="crystal-image" value="green" src="assets/images/crystal_green.png" alt="Glowing Green Crystal">
+				</div>
+
+				<div class="col-lg-3">
+				<img id="crystal-blue" class="crystal-image" value="blue" src="assets/images/crystal_blue.png" alt="Glowing Blue Crystal">
+				</div>
+
+				<div class="col-lg-3">
+				<img id="crystal-red" class="crystal-image" value="red" src="assets/images/crystal_red.png" alt="Glowing Red Crystal">
+				</div>
+
+			</div>
 		</div>
+
 	</div>
-</div>	
 
-<div class="container-fluid mt-4">
-	<div class="row">
-
-		<div class="col-lg-2 offset-lg-2">
-		<img id="crystal-orange" class="crystal-image" value="orange" src="assets/images/crystal_orange.png" alt="Glowing Orange Crystal">
-		</div>
-
-		<div class="col-lg-2">
-		<img id="crystal-green" class="crystal-image" value="green" src="assets/images/crystal_green.png" alt="Glowing Green Crystal">
-		</div>
-
-		<div class="col-lg-2">
-		<img id="crystal-blue" class="crystal-image" value="blue" src="assets/images/crystal_blue.png" alt="Glowing Blue Crystal">
-		</div>
-
-		<div class="col-lg-2">
-		<img id="crystal-red" class="crystal-image" value="red" src="assets/images/crystal_red.png" alt="Glowing Red Crystal">
-		</div>
-
-	</div>
 </div>
 
 

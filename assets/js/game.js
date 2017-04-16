@@ -22,8 +22,8 @@ $(document).ready(function() {
 
 	function start(){
 
-		$('#win-line').html("<p>Wins: " + wins + "</p>");
-		$('#lose-line').html("<p>Losses: " + losses + "</p>");
+		$('#win-line').html("<h4>Wins: " + wins + "</h4>");
+		$('#lose-line').html("<h4>Losses: " + losses + "</h4>");
 		
 
 		randomNumberEmptyArray = [];
@@ -64,16 +64,16 @@ $(document).ready(function() {
     	$("#crystal-orange").effect("bounce", {times:2}, "fast" );
 
     	cumulativeScore += orangeRandomNumber;
-    	$('#actual-current-score').html(cumulativeScore);
+    	$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
 
     	if(cumulativeScore === scoreToWin){
     		wins++;
     		start();
-    		$('#actual-current-score').html(cumulativeScore);
+    		$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
     	} else if(cumulativeScore > scoreToWin){
     		losses++;
     		start();
-    		$('#actual-current-score').html(cumulativeScore);
+    		$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
     	}
 
       });
@@ -83,17 +83,17 @@ $(document).ready(function() {
     	$("#crystal-green").effect("bounce", {times:2}, "fast" );
 
     	cumulativeScore += greenRandomNumber;
-    	$('#actual-current-score').html(cumulativeScore);
+    	$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
 
 
     	if(cumulativeScore === scoreToWin){
     		wins++;
     		start();
-    		$('#actual-current-score').html(cumulativeScore);
+    		$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
     	} else if(cumulativeScore > scoreToWin){
     		losses++;
     		start();
-    		$('#actual-current-score').html(cumulativeScore);
+    		$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
     	}
 
       });
@@ -103,16 +103,16 @@ $(document).ready(function() {
     	$("#crystal-blue").effect("bounce", {times:2}, "fast" );
 
     	cumulativeScore += blueRandomNumber;
-    	$('#actual-current-score').html(cumulativeScore);
+    	$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
 
     	if(cumulativeScore === scoreToWin){
     		wins++;
     		start();
-    		$('#actual-current-score').html(cumulativeScore);
+    		$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
     	} else if(cumulativeScore > scoreToWin){
     		losses++;
     		start();
-    		$('#actual-current-score').html(cumulativeScore);
+    		$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
     	}
 
       });
@@ -122,16 +122,16 @@ $(document).ready(function() {
     	$("#crystal-red").effect("bounce", {times:2}, "fast" );
 
     	cumulativeScore += redRandomNumber;
-    	$('#actual-current-score').html(cumulativeScore);
+    	$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
 
     	if(cumulativeScore === scoreToWin){
     		wins++;
     		start();
-    		$('#actual-current-score').html(cumulativeScore);
+    		$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
     	} else if(cumulativeScore > scoreToWin){
     		losses++;
     		start();
-    		$('#actual-current-score').html(cumulativeScore);
+    		$('#actual-current-score').html("<h3>" + cumulativeScore + "</h3>");
     	}
 
       });
